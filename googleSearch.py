@@ -1,3 +1,15 @@
+'''
+author: ajaypanthagani
+language: python 3
+pre-requisites:
+1. Active internet connection
+2. requests library installed
+3. BeautifulSoup installed
+4. re library installed
+5. urllib library installed
+'''
+
+#importing all the necessary libraries
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -5,7 +17,7 @@ import urllib.parse
 from urllib.parse import urlparse
 import randomAgent
 
-
+#defining the googleSearch function
 def googleSearch(url):
 	user_agent = randomAgent.getUA()
 	ran_head = {
